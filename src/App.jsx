@@ -2,17 +2,44 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import Header from './Components/Header/Header'
-import Footer from './Components/Footer/Footer'
-import Flashcard from './Components/Flashcard/Flashcard'
+
+const flashes = [
+                  {
+                    question: "How do you get to Hell? 😈",
+                    answer: "Jump down this hole, mate. 🕳️"
+                  },
+                  {
+                    question: "How do you get to Hell? 😈",
+                    answer: "Jump down this hole, mate. 🕳️"
+                  },
+                  {
+                    question: "How do you get to Hell? 😈",
+                    answer: "Jump down this hole, mate. 🕳️"
+                  }
+                ]
 
 function App() {
   return (
     <>
-      <Header/>
-      <Flashcard/>
-      <main>M</main>
-      <Footer/>
+      <header>
+        <h1>Flashcard App</h1>
+      </header>
+      <main>
+        <section>
+          <form></form>
+        </section>
+        <section>
+          {flashes.map((flashcard) => (
+            <>
+              <div>{flashcard.question}</div>
+              <div>{flashcard.answer}</div>
+            </>
+          ))}
+        </section>
+      </main>
+      <footer>
+        <h6>Built With React</h6>
+      </footer>
     </>
   )
 }
