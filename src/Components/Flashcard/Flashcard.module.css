@@ -1,0 +1,31 @@
+.question {
+    border: 1px solid black;
+    height: 200px;
+    width: 300px;
+    background-color: #323949;
+}
+
+.answer {
+    border: 1px solid blue;
+    height: 200px;
+    width: 300px;
+    background-color: #06b1df;
+}
+
+.emoji {
+    font-size: 60px;
+    margin-top: -20px;
+}
+
+.cross {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.questionText {
+    margin-top: -60px;
+    color: #ffffff;
+}
