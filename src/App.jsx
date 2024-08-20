@@ -2,6 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import Flashcards from './Components/Flashcards/Flashcards'
 
 const flashes = [
                   {
@@ -28,14 +29,7 @@ function App() {
         <section>
           <form></form>
         </section>
-        <section>
-          {flashes.map((flashcard) => (
-            <>
-              <div>{flashcard.question}</div>
-              <div>{flashcard.answer}</div>
-            </>
-          ))}
-        </section>
+        <Flashcards flashcards={flashes} />
       </main>
       <footer>
         <h6>Built With React</h6>
